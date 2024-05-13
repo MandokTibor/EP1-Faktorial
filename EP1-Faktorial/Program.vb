@@ -13,6 +13,12 @@ Module Program
             End
         End If
 
+        If cislo < 10 Then
+            Console.WriteLine("musi byt mensi nez 10")
+            Console.ReadKey()
+            End
+
+        End If
         For i = 1 To cislo
                 soucet = soucet + i
             Next
