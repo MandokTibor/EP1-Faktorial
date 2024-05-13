@@ -7,9 +7,13 @@ Module Program
             Dim soucet As Integer = 0
 
             Console.Write("Zadej èíslo: ")
-            cislo = Console.ReadLine
+        cislo = Console.ReadLine
+        If cislo <= 0 Then
+            Console.Write("Chyba vstupu")
+            End
+        End If
 
-            For i = 1 To cislo
+        For i = 1 To cislo
                 soucet = soucet + i
             Next
 
